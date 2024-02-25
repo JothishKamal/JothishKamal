@@ -1,8 +1,8 @@
 - 👋 Hi, I’m @JothishKamal
 - 👀 I’m interested in Python and generally computers.
-- 🌱 I’m currently learning nothing.
-- 💞️ I’m looking to collaborate on a Core Banking System.
-- 📫 How to reach me - ∫ Jo.dJo#2012
+- 🌱 I’m currently learning Flutter.
+- 💞️ I’m looking to collaborate on hackathons and projects.
+- 📫 How to reach me - integral.jo.djo
 
 <!---
 JothishKamal/JothishKamal is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.

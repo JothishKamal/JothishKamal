@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @JothishKamal
-- 👀 I’m interested in Python and generally computers.
+- 👀 I’m interested in Golang and generally computers.
 - 🌱 I’m currently learning Flutter.
 - 💞️ I’m looking to collaborate on hackathons and projects.
 - 📫 How to reach me - integral.jo.djo

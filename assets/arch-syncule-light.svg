@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="Syncule data pipeline">
+  <defs><marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969DA"/></marker></defs>
+  <rect width="900" height="120" fill="#FFFFFF"/>
+  <g font-family="ui-monospace,'SF Mono','Cascadia Code','JetBrains Mono',monospace" font-size="12">
+    <rect x="11" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="69" y="64" text-anchor="middle" fill="#1F2328">Inbox</text>
+    <line x1="127" y1="60" x2="138" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="138" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="196" y="64" text-anchor="middle" fill="#1F2328">Google OAuth</text>
+    <line x1="254" y1="60" x2="265" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="265" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="323" y="64" text-anchor="middle" fill="#1F2328">FastAPI</text>
+    <line x1="381" y1="60" x2="392" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="392" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="450" y="64" text-anchor="middle" fill="#1F2328">Postgres</text>
+    <line x1="508" y1="60" x2="519" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="519" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="577" y="64" text-anchor="middle" fill="#1F2328">Job Queue</text>
+    <line x1="635" y1="60" x2="646" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="646" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#0969DA"/>
+    <text x="704" y="64" text-anchor="middle" fill="#1F2328">LLM</text>
+    <line x1="762" y1="60" x2="773" y2="60" stroke="#0969DA" stroke-width="1.5" marker-end="url(#arw)"/>
+    <rect x="773" y="40" width="116" height="40" rx="8" fill="#F6F8FA" stroke="#D0D7DE"/>
+    <text x="831" y="64" text-anchor="middle" fill="#1F2328">Calendar</text>
+  </g>
+</svg>

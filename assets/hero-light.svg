@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 260" width="1000" height="260" role="img" aria-label="Terminal: whoami — Jothish Kamal, Backend Engineer">
+  <rect x="1" y="1" width="998" height="258" rx="12" fill="#F6F8FA" stroke="#D0D7DE"/>
+  <circle cx="26" cy="24" r="6" fill="#D0D7DE"/><circle cx="46" cy="24" r="6" fill="#D0D7DE"/><circle cx="66" cy="24" r="6" fill="#D0D7DE"/>
+  <text x="500" y="28" text-anchor="middle" font-size="12" fill="#636C76" font-family="ui-monospace,'SF Mono','Cascadia Code','JetBrains Mono',monospace">jothish@backend ~ %</text>
+  <line x1="1" y1="46" x2="999" y2="46" stroke="#D0D7DE"/>
+  <g font-family="ui-monospace,'SF Mono','Cascadia Code','JetBrains Mono',monospace" font-size="15">
+    <text x="28" y="86" fill="#1A7F37">$ <tspan fill="#1F2328">whoami</tspan>
+      <animate attributeName="opacity" from="0" to="1" begin="0.2s" dur="0.3s" fill="freeze"/></text>
+    <text x="28" y="116" fill="#0969DA" opacity="0">Jothish Kamal <tspan fill="#636C76">— Backend Engineer</tspan>
+      <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="0.3s" fill="freeze"/></text>
+    <text x="28" y="142" fill="#636C76" font-size="13" opacity="0">Building distributed systems, AI infrastructure, and developer tooling.
+      <animate attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.3s" fill="freeze"/></text>
+    <text x="28" y="182" fill="#1A7F37" opacity="0">$ <tspan fill="#1F2328">stack</tspan>
+      <animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.3s" fill="freeze"/></text>
+    <text x="28" y="212" fill="#1F2328" opacity="0">Go <tspan fill="#D0D7DE">·</tspan> Python <tspan fill="#D0D7DE">·</tspan> Docker <tspan fill="#D0D7DE">·</tspan> Redis <tspan fill="#D0D7DE">·</tspan> Postgres
+      <animate attributeName="opacity" from="0" to="1" begin="2.5s" dur="0.3s" fill="freeze"/></text>
+    <rect x="28" y="230" width="10" height="18" fill="#0969DA" opacity="0">
+      <animate attributeName="opacity" from="0" to="1" begin="3.0s" dur="0.1s" fill="freeze"/>
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" begin="3.1s" repeatCount="indefinite"/></rect>
+  </g>
+</svg>

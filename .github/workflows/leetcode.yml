@@ -1,0 +1,23 @@
+name: leetcode
+on:
+  schedule: [{cron: '0 0 * * 0'}]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python scripts/fetch_leetcode.py
+      - name: commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet assets/leetcode-*.svg; then
+            git add assets/leetcode-*.svg
+            git commit -m "chore: refresh LeetCode card [skip ci]"
+            git push
+          fi

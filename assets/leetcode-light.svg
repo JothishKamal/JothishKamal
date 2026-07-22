@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 150" width="440" height="150" role="img" aria-label="LeetCode DSA stats">
+  <rect x="1" y="1" width="438" height="148" rx="12" fill="#F6F8FA" stroke="#D0D7DE"/>
+  <text x="24" y="36" font-size="14" fill="#636C76" font-family="ui-monospace,monospace">DSA <tspan fill="#D0D7DE">/</tspan> LeetCode</text>
+  <text x="24" y="66" font-size="30" fill="#1F2328" font-family="ui-monospace,monospace">348<tspan font-size="14" fill="#636C76"> solved</tspan></text>
+  <text x="24" y="98" font-size="26" fill="#0969DA" font-family="ui-monospace,monospace">162</text><text x="24" y="118" font-size="11" fill="#636C76" font-family="ui-monospace,monospace">Medium</text>
+  <text x="150" y="98" font-size="26" fill="#1F2328" font-family="ui-monospace,monospace">59</text><text x="150" y="118" font-size="11" fill="#636C76" font-family="ui-monospace,monospace">Hard</text>
+  <text x="250" y="98" font-size="26" fill="#1F2328" font-family="ui-monospace,monospace">239</text><text x="250" y="118" font-size="11" fill="#636C76" font-family="ui-monospace,monospace">Active Days</text>
+  <text x="370" y="98" font-size="26" fill="#1A7F37" font-family="ui-monospace,monospace">116</text><text x="370" y="118" font-size="11" fill="#636C76" font-family="ui-monospace,monospace">Streak</text>
+</svg>

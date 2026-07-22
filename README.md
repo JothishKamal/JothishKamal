@@ -102,6 +102,7 @@ Server-Driven UI package (JSON + gRPC). → [`GDGVIT/flutter-glimpse`](https://g
 ![Snake](https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake-dark.svg)
 
 <!-- metrics.svg is committed by the metrics workflow once METRICS_TOKEN is set -->
+![Metrics](assets/metrics.svg)
 
 ---
 

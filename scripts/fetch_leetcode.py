@@ -12,6 +12,8 @@ DARK = {"bg": "#0D1117", "panel": "#161B22", "border": "#30363D",
 LIGHT = {"bg": "#FFFFFF", "panel": "#F6F8FA", "border": "#D0D7DE",
          "text": "#1F2328", "muted": "#636C76", "accent": "#0969DA", "signal": "#1A7F37"}
 
+FONT = "ui-monospace,'SF Mono','Cascadia Code','JetBrains Mono',monospace"
+
 
 def query(q, variables):
     body = json.dumps({"query": q, "variables": variables}).encode()
@@ -37,13 +39,13 @@ def fetch():
 def render(s, t):
     def stat(x, label, value, color):
         return (f'<text x="{x}" y="98" font-size="26" fill="{color}" '
-                f'font-family="ui-monospace,monospace">{value}</text>'
+                f'font-family="{FONT}">{value}</text>'
                 f'<text x="{x}" y="118" font-size="11" fill="{t["muted"]}" '
-                f'font-family="ui-monospace,monospace">{label}</text>')
+                f'font-family="{FONT}">{label}</text>')
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 150" width="440" height="150" role="img" aria-label="LeetCode DSA stats">
   <rect x="1" y="1" width="438" height="148" rx="12" fill="{t['panel']}" stroke="{t['border']}"/>
-  <text x="24" y="36" font-size="14" fill="{t['muted']}" font-family="ui-monospace,monospace">DSA <tspan fill="{t['border']}">/</tspan> LeetCode</text>
-  <text x="24" y="66" font-size="30" fill="{t['text']}" font-family="ui-monospace,monospace">{s['all']}<tspan font-size="14" fill="{t['muted']}"> solved</tspan></text>
+  <text x="24" y="36" font-size="14" fill="{t['muted']}" font-family="{FONT}">DSA <tspan fill="{t['border']}">/</tspan> LeetCode</text>
+  <text x="24" y="66" font-size="30" fill="{t['text']}" font-family="{FONT}">{s['all']}<tspan font-size="14" fill="{t['muted']}"> solved</tspan></text>
   {stat(24, "Medium", s['medium'], t['accent'])}
   {stat(150, "Hard", s['hard'], t['text'])}
   {stat(250, "Active Days", s['active'], t['text'])}

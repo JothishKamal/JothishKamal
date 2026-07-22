@@ -19,3 +19,4 @@ jobs:
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
           committer_branch: main
+          output_action: commit

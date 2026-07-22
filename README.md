@@ -3,13 +3,18 @@
   <img alt="Jothish Kamal — Backend Engineer" src="assets/hero-light.svg" width="100%">
 </picture>
 
-### Now
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/services-dark.svg">
+  <img alt="System status — backend, distributed systems, AI infrastructure and open source running" src="assets/services-light.svg" width="100%">
+</picture>
+
+### Current Focus
 
 <!-- NOW:START -->
-- **Building** — Enterprise Run Comparison Platform @ Citi
-- **Learning** — Kubernetes, Go concurrency
-- **Reading** — Designing Data-Intensive Applications
-- **Interested in** — Distributed systems, AI infrastructure, developer tooling
+`●` **Building** — Enterprise Run Comparison Platform @ Citi <br>
+`●` **Learning** — Kubernetes · Go concurrency <br>
+`●` **Reading** — Designing Data-Intensive Applications <br>
+`●` **Status** — Available for backend engineering roles
 <!-- NOW:END -->
 
 ### Engineering Philosophy
@@ -24,17 +29,17 @@
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-citi-dark.svg"><img alt="Citi Run Comparison pipeline" src="assets/arch-citi-light.svg" width="100%"></picture>
 
-- Architected an enterprise feed **Run Comparison platform** — Parquet ingestion, schema reconciliation, diff generation, hybrid caching — replacing manual comparison workflows.
-- Built a zero-copy Parquet streaming loader: **8-worker** parallel loading across hierarchical object storage, **200K+ records**.
-- Shipped **6 modules** with **25+ automated tests**; cut latency via incremental pagination + memoized diffs.
+> **Problem** — Manual, error-prone reconciliation between consecutive enterprise feed runs. <br>
+> **Solution** — A schema-aware Parquet comparison engine with zero-copy streaming, parallel loading, and hybrid caching. <br>
+> **Impact** — `200K+ records` · `8-worker loading` · `6 modules` · `25+ automated tests`
 
 **AI-Mond** — SDE Intern · Feb 2026 – Jun 2026
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-aimond-dark.svg"><img alt="AI-Mond document pipeline" src="assets/arch-aimond-light.svg" width="100%"></picture>
 
-- Engineered a high-throughput async document pipeline (FastAPI · Redis · Celery · MongoDB/Beanie); eliminated N+1 queries via batch aggregation.
-- Integrated **Gemini via Vertex AI** for entity extraction with HTTP 429 retry/backoff.
-- Added **SSE** real-time task streaming and owner-scoped CRUD with strict **RBAC/JWT**.
+> **Problem** — Slow, N+1-bound document processing with no real-time feedback. <br>
+> **Solution** — Async FastAPI · Redis · Celery pipeline with batch aggregation and Gemini (Vertex AI) extraction. <br>
+> **Impact** — `SSE streaming` · `429 retry/backoff` · `RBAC/JWT` · `28 rule functions`
 
 ---
 
@@ -75,11 +80,51 @@ Server-Driven UI package (JSON + gRPC). → [`GDGVIT/flutter-glimpse`](https://g
 
 ### Tech Stack
 
-**Languages** · Go · Python · Java · TypeScript · Kotlin · Dart · SQL
-**Backend** · FastAPI · Gin · Fiber · Echo · Chi · Node.js · Celery
-**Databases & Caching** · Postgres · MongoDB · MySQL · Redis
-**Infra & DevOps** · Docker · AWS (EC2/Lambda/S3) · Git · Firebase
-**AI** · Vertex AI · Gemini · LLMs · RAG
+<table>
+<tr>
+<td width="25%" valign="top">
+
+**Languages**
+
+Go <br>
+Python <br>
+Java <br>
+TypeScript <br>
+SQL
+
+</td>
+<td width="25%" valign="top">
+
+**Backend**
+
+FastAPI <br>
+Gin · Fiber <br>
+Node.js <br>
+Celery
+
+</td>
+<td width="25%" valign="top">
+
+**Infrastructure**
+
+Docker <br>
+AWS <br>
+Postgres · Redis <br>
+MongoDB
+
+</td>
+<td width="25%" valign="top">
+
+**AI**
+
+Vertex AI <br>
+Gemini <br>
+LLMs <br>
+RAG
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -95,20 +140,27 @@ Server-Driven UI package (JSON + gRPC). → [`GDGVIT/flutter-glimpse`](https://g
 ### Stats
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=JothishKamal&show_icons=true&hide_border=true&theme=github_dark&bg_color=0D1117&title_color=00ADD8&icon_color=00ADD8&text_color=E6EDF3">
-  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=JothishKamal&show_icons=true&hide_border=true&title_color=0969DA&icon_color=0969DA">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake-dark.svg">
+  <img alt="Contribution graph" src="https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake.svg">
 </picture>
 
-![Snake](https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake-dark.svg)
-
-<!-- metrics.svg is committed by the metrics workflow once METRICS_TOKEN is set -->
-![Metrics](assets/metrics.svg)
+<!-- metrics.svg (languages + activity only) is committed by the metrics workflow once METRICS_TOKEN is set -->
+![Languages and activity](assets/metrics.svg)
 
 ---
 
 ### Contact
 
-[GitHub](https://github.com/JothishKamal) · [LeetCode](https://leetcode.com/u/JothishKamal/) · [Email](mailto:jothishkamal@gmail.com)
+`$ contact`
+
+→ [github](https://github.com/JothishKamal) <br>
+→ [leetcode](https://leetcode.com/u/JothishKamal/) <br>
+→ [linkedin](https://www.linkedin.com/in/jothishkamal/) <br>
+→ [email](mailto:jothishkamal@gmail.com)
+
+---
+
+<div align="center"><sub><!-- DEPLOYED:START -->last deployed 2026-07-22 · generated with GitHub Actions · status: ● online<!-- DEPLOYED:END --></sub></div>
 
 <!--
 $ whoami

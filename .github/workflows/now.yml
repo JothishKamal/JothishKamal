@@ -1,0 +1,45 @@
+name: now
+on:
+  push: {paths: ['now.yml']}
+  schedule: [{cron: '0 0 * * 0'}]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: render now.yml into README
+        run: |
+          python - <<'PY'
+          import re, io
+          with open('now.yml', encoding='utf-8') as f:
+              lines = [l.rstrip() for l in f if l.strip() and not l.startswith('#')]
+          data = dict(l.split(':', 1) for l in lines)
+          data = {k.strip(): v.strip() for k, v in data.items()}
+          block = "\n".join([
+              f"- **Building** — {data.get('building','')}",
+              f"- **Learning** — {data.get('learning','')}",
+              f"- **Reading** — {data.get('reading','')}",
+              f"- **Interested in** — {data.get('interested_in','')}",
+          ])
+          with open('README.md', encoding='utf-8') as f:
+              readme = f.read()
+          new = re.sub(r"<!-- NOW:START -->.*<!-- NOW:END -->",
+                       f"<!-- NOW:START -->\n{block}\n<!-- NOW:END -->",
+                       readme, flags=re.S)
+          with open('README.md', 'w', encoding='utf-8') as f:
+              f.write(new)
+          PY
+      - name: commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "chore: sync Now section [skip ci]"
+            git push
+          fi

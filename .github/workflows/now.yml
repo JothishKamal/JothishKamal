@@ -19,14 +19,14 @@ jobs:
           with open('now.yml', encoding='utf-8') as f:
               lines = [l.rstrip() for l in f if l.strip() and not l.startswith('#')]
           data = {k.strip(): v.strip() for k, v in (l.split(':', 1) for l in lines)}
-          now_block = " <br>\n".join([
-              f"`●` **Building** — {data.get('building','')}",
-              f"`●` **Learning** — {data.get('learning','')}",
-              f"`●` **Reading** — {data.get('reading','')}",
-              f"`●` **Status** — {data.get('status','')}",
+          now_block = "\n".join([
+              f"- **Building** — {data.get('building','')}",
+              f"- **Learning** — {data.get('learning','')}",
+              f"- **Reading** — {data.get('reading','')}",
+              f"- **Status** — {data.get('status','')}",
           ])
           today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
-          deployed = f"last deployed {today} · generated with GitHub Actions · status: ● online"
+          deployed = f"last deployed {today} · generated with GitHub Actions"
           with open('README.md', encoding='utf-8') as f:
               readme = f.read()
           readme = re.sub(r"<!-- NOW:START -->.*?<!-- NOW:END -->",

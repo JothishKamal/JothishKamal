@@ -1,166 +1,128 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img alt="Jothish Kamal — Backend Engineer" src="assets/hero-light.svg" width="100%">
-</picture>
+# Jothish Kamal
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/services-dark.svg">
-  <img alt="System status — backend, distributed systems, AI infrastructure and open source running" src="assets/services-light.svg" width="100%">
-</picture>
+**Backend Engineer** — building distributed systems, AI infrastructure, and developer tooling.
+Currently Technology Summer Analyst @ Citi.
 
-### Current Focus
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/JothishKamal)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-181717?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jothishkamal/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-181717?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode.com/u/JothishKamal/)
+[![Email](https://img.shields.io/badge/Email-181717?style=flat-square&logo=gmail&logoColor=white)](mailto:jothishkamal@gmail.com)
+
+## Currently
 
 <!-- NOW:START -->
-`●` **Building** — Enterprise Run Comparison Platform @ Citi <br>
-`●` **Learning** — Kubernetes · Go concurrency <br>
-`●` **Reading** — Designing Data-Intensive Applications <br>
-`●` **Status** — Available for backend engineering roles
+- **Building** — Enterprise Run Comparison Platform @ Citi
+- **Learning** — Kubernetes · Go concurrency
+- **Reading** — Designing Data-Intensive Applications
+- **Status** — Available for backend engineering roles
 <!-- NOW:END -->
 
-### Engineering Philosophy
+## Engineering Philosophy
 
-`Reliability over cleverness` · `Observability over assumptions` · `Automation over repetition` · `Simple systems scale` · `Good APIs disappear`
-
----
-
-### Experience
-
-**Citi** — Technology Summer Analyst (SDE Intern) · Jun 2026 – Present
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-citi-dark.svg"><img alt="Citi Run Comparison pipeline" src="assets/arch-citi-light.svg" width="100%"></picture>
-
-> **Problem** — Manual, error-prone reconciliation between consecutive enterprise feed runs. <br>
-> **Solution** — A schema-aware Parquet comparison engine with zero-copy streaming, parallel loading, and hybrid caching. <br>
-> **Impact** — `200K+ records` · `8-worker loading` · `6 modules` · `25+ automated tests`
-
-**AI-Mond** — SDE Intern · Feb 2026 – Jun 2026
-
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-aimond-dark.svg"><img alt="AI-Mond document pipeline" src="assets/arch-aimond-light.svg" width="100%"></picture>
-
-> **Problem** — Slow, N+1-bound document processing with no real-time feedback. <br>
-> **Solution** — Async FastAPI · Redis · Celery pipeline with batch aggregation and Gemini (Vertex AI) extraction. <br>
-> **Impact** — `SSE streaming` · `429 retry/backoff` · `RBAC/JWT` · `28 rule functions`
+Reliability over cleverness. Observability over assumptions. Automation over repetition. Simple systems scale better. Good APIs disappear.
 
 ---
 
-### Featured Projects
+## Experience
 
-**Syncule** — Email intelligence platform · `FastAPI · Postgres · Prisma · Docker · LLMs`
+### Citi — Technology Summer Analyst (SDE Intern)
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-syncule-dark.svg"><img alt="Syncule pipeline" src="assets/arch-syncule-light.svg" width="100%"></picture>
+Jun 2026 – Present
 
-Automated email ingestion, interest-based filtering, and calendar sync — Google OAuth, idempotent job queues, and a containerized async LLM pipeline. → [`raisaaajose/event-tracker-v2`](https://github.com/raisaaajose/event-tracker-v2)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-citi-dark.svg">
+  <img alt="Citi Run Comparison pipeline: enterprise feeds to object storage to Parquet loader to schema reconciliation to diff engine to Streamlit" src="assets/arch-citi-light.svg" width="100%">
+</picture>
 
-**DEVSOC'25 Backend** — Hackathon platform · `Go · Postgres · Docker`
+> **Problem** — Manual, error-prone reconciliation between consecutive enterprise feed runs.
+> **Solution** — A schema-aware Parquet comparison engine with zero-copy streaming, parallel loading, and hybrid caching.
+> **Impact** — 200K+ records · 8-worker parallel loading · 6 modules · 25+ automated tests
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/arch-devsoc-dark.svg"><img alt="DEVSOC backend pipeline" src="assets/arch-devsoc-light.svg" width="100%"></picture>
+### AI-Mond — SDE Intern
 
-Served **1,200 concurrent users at 99.9% uptime**; **+35%** API latency via query optimization, indexing, and connection pooling; JWT refresh tokens + OTP email verification. → [`CodeChefVIT/devsoc-be-25`](https://github.com/CodeChefVIT/devsoc-be-25)
+Feb 2026 – Jun 2026
 
-<table>
-<tr>
-<td width="50%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-aimond-dark.svg">
+  <img alt="AI-Mond document pipeline: documents to FastAPI to Redis to Celery to Vertex AI to MongoDB" src="assets/arch-aimond-light.svg" width="100%">
+</picture>
 
-**VITTY** · `Kotlin`
-
-Shipped Android timetable app — **10k+ downloads · 31★**. → [`GDGVIT/vitty-app`](https://github.com/GDGVIT/vitty-app)
-
-</td>
-<td width="50%" valign="top">
-
-**Flutter Glimpse** · `Dart`
-
-Server-Driven UI package (JSON + gRPC). → [`GDGVIT/flutter-glimpse`](https://github.com/GDGVIT/flutter-glimpse)
-
-</td>
-</tr>
-</table>
+> **Problem** — Slow, N+1-bound document processing with no real-time feedback.
+> **Solution** — Async FastAPI, Redis and Celery pipeline with batch aggregation and Gemini extraction via Vertex AI.
+> **Impact** — SSE task streaming · HTTP 429 retry/backoff · RBAC/JWT · 28 rule functions
 
 ---
 
-### Tech Stack
+## Featured Projects
 
-<table>
-<tr>
-<td width="25%" valign="top">
+### Syncule — Email intelligence platform
 
-**Languages**
+FastAPI · Postgres · Prisma · Docker · LLMs
 
-Go <br>
-Python <br>
-Java <br>
-TypeScript <br>
-SQL
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-syncule-dark.svg">
+  <img alt="Syncule pipeline: inbox to Google OAuth to FastAPI to Postgres to job queue to LLM to calendar" src="assets/arch-syncule-light.svg" width="100%">
+</picture>
 
-</td>
-<td width="25%" valign="top">
+Automated email ingestion, interest-based filtering, and calendar sync — Google OAuth, idempotent job queues, and a containerized async LLM pipeline.
+[View repository →](https://github.com/raisaaajose/event-tracker-v2)
 
-**Backend**
+### DEVSOC'25 Backend — Hackathon platform
 
-FastAPI <br>
-Gin · Fiber <br>
-Node.js <br>
-Celery
+Go · Postgres · Docker
 
-</td>
-<td width="25%" valign="top">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-devsoc-dark.svg">
+  <img alt="DEVSOC backend pipeline: users to Go API to JWT auth to Postgres to email OTP" src="assets/arch-devsoc-light.svg" width="100%">
+</picture>
 
-**Infrastructure**
+Served 1,200 concurrent users at 99.9% uptime; improved API response times by 35% via query optimization, indexing, and connection pooling; JWT refresh tokens with OTP email verification.
+[View repository →](https://github.com/CodeChefVIT/devsoc-be-25)
 
-Docker <br>
-AWS <br>
-Postgres · Redis <br>
-MongoDB
+### Also maintained
 
-</td>
-<td width="25%" valign="top">
-
-**AI**
-
-Vertex AI <br>
-Gemini <br>
-LLMs <br>
-RAG
-
-</td>
-</tr>
-</table>
+| Project | Stack | Notes |
+| --- | --- | --- |
+| [VITTY](https://github.com/GDGVIT/vitty-app) | Kotlin | Shipped Android timetable app — 10k+ downloads, 31 stars |
+| [Flutter Glimpse](https://github.com/GDGVIT/flutter-glimpse) | Dart | Server-Driven UI package with JSON and gRPC support |
 
 ---
 
-### DSA
+## Tech Stack
+
+| Languages | Backend | Infrastructure | AI |
+| --- | --- | --- | --- |
+| Go | FastAPI | Docker | Vertex AI |
+| Python | Gin · Fiber | AWS | Gemini |
+| Java | Node.js | Postgres · Redis | LLMs |
+| TypeScript | Celery | MongoDB | RAG |
+| SQL | | | |
+
+---
+
+## DSA
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/leetcode-dark.svg">
-  <img alt="LeetCode DSA stats" src="assets/leetcode-light.svg" width="440">
+  <img alt="LeetCode statistics" src="assets/leetcode-light.svg" width="440">
 </picture>
 
 ---
 
-### Stats
+## Contributions
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake-dark.svg">
   <img alt="Contribution graph" src="https://raw.githubusercontent.com/JothishKamal/JothishKamal/output/snake.svg">
 </picture>
 
-<!-- metrics.svg (languages + activity only) is committed by the metrics workflow once METRICS_TOKEN is set -->
-![Languages and activity](assets/metrics.svg)
-
 ---
 
-### Contact
+## Contact
 
-`$ contact`
+[GitHub](https://github.com/JothishKamal) · [LinkedIn](https://www.linkedin.com/in/jothishkamal/) · [LeetCode](https://leetcode.com/u/JothishKamal/) · [Email](mailto:jothishkamal@gmail.com)
 
-→ [github](https://github.com/JothishKamal) <br>
-→ [leetcode](https://leetcode.com/u/JothishKamal/) <br>
-→ [linkedin](https://www.linkedin.com/in/jothishkamal/) <br>
-→ [email](mailto:jothishkamal@gmail.com)
-
----
-
-<div align="center"><sub><!-- DEPLOYED:START -->last deployed 2026-07-22 · generated with GitHub Actions · status: ● online<!-- DEPLOYED:END --></sub></div>
+<div align="center"><sub><!-- DEPLOYED:START -->last deployed 2026-07-23 · generated with GitHub Actions<!-- DEPLOYED:END --></sub></div>
 
 <!--
 $ whoami
